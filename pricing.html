@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Pricing</title>
+    <meta charset="UTF-8">
+    <title>Pricing - Collaborative Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Our Pricing Plans</h1>
+    <nav class="navbar">
+        <h2 class="logo">CollabSite</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pricing.html" class="active">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="pricing-container">
-        <div class="card">
-            <h2>Basic Plan</h2>
-            <p>₹500 / month</p>
-            <button onclick="buyPlan('Basic')">Buy Now</button>
-        </div>
+    <section class="pricing-section">
+        <h1 class="section-title">Choose Your Plan</h1>
 
-        <div class="card">
-            <h2>Premium Plan</h2>
-            <p>₹1000 / month</p>
-            <button onclick="buyPlan('Premium')">Buy Now</button>
+        <div class="pricing-container">
+
+            <div class="card">
+                <h2>Basic Plan</h2>
+                <p class="price">₹500 / month</p>
+                <ul>
+                    <li>✔ 5 Projects</li>
+                    <li>✔ Basic Support</li>
+                    <li>✔ 1GB Storage</li>
+                </ul>
+                <button onclick="buyPlan('Basic', 500)">Buy Now</button>
+            </div>
+
+            <div class="card featured">
+                <div class="badge">Most Popular</div>
+                <h2>Premium Plan</h2>
+                <p class="price">₹1000 / month</p>
+                <ul>
+                    <li>✔ Unlimited Projects</li>
+                    <li>✔ Priority Support</li>
+                    <li>✔ 10GB Storage</li>
+                </ul>
+                <button onclick="buyPlan('Premium', 1000)">Buy Now</button>
+            </div>
+
         </div>
-    </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
