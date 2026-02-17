@@ -1,22 +1,24 @@
-// Mobile Menu Toggle
+
 const toggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
+if (toggle && navLinks) {
+    toggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+}
 
-toggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
 
-
-// Active Navbar Link Highlight
 const currentPage = window.location.pathname.split("/").pop();
 const links = document.querySelectorAll(".nav-links a");
 
-links.forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-        link.style.color = "#6c63ff";
-        link.style.fontWeight = "600";
-    }
-});
+if (links.length > 0) {
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.style.color = "#6c63ff";
+            link.style.fontWeight = "600";
+        }
+    });
+}
 
 
 // Contact Form Alert
