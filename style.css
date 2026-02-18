@@ -1,8 +1,12 @@
+ Ahmed-pricing
 /* Reset */
+/* Global Styles */
+main
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+Ahmed-pricing
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -110,13 +114,147 @@ body {
     transform: scale(1.1);
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: #111827;
+    color: #fff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #3b82f6;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* ================= PRICING SECTION ================= */
+
+.pricing-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* ================= CARD ================= */
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.plan-desc {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #111827;
+}
+
+/* Feature List */
+.features-list {
+    list-style: none;
+    margin: 15px 0 20px;
+    text-align: left;
+}
+
+.features-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #2563eb;
+>main
+}
+
 /* Featured Card */
 .featured {
+Ahmed-pricing
     border: 2px solid #ffd700;
+    border: 2px solid #3b82f6;
+ main
 }
 
 .badge {
     position: absolute;
+ Ahmed-pricing
     top: -12px;
     right: 20px;
     background: #ffd700;
@@ -138,5 +276,37 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 15px;
+
+    top: -10px;
+    right: -10px;
+    background: #3b82f6;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #111827;
+        flex-direction: column;
+        width: 200px;
+        display: none;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+ main
     }
 }
