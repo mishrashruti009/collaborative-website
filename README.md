@@ -24,6 +24,7 @@ The goal of this project is to practice GitHub collaboration, branching, pull re
 1. Clone the repository
 2. Open the project folder
 3. Open `index.html` in your browser
+3. Open index.html in your browser
 
 ## Contributors
 
