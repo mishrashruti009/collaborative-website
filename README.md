@@ -1,33 +1,32 @@
-# Collaborative Website Project
+# Aura – SaaS Landing Website
 
-# Project Overview
+## Project Overview
 
-This project is a collaborative multi-page website created using HTML, CSS, and JavaScript.
+Aura is a collaborative multi-page SaaS landing website built using HTML, CSS, and JavaScript.  
+The goal of this project is to practice GitHub collaboration, branching, pull requests, and integration of multiple pages.
 
----
+## Pages Included
 
-# Project Files
+- Home
+- About
+- Pricing
+- Shop
+- Contact
 
-- Index.html – Home page
-- about.html – About page
-- pricing.html – Pricing page
-- contact.html – Contact page
-- shop.html – Shop page
-- style.css – Styling file
-- script.js – JavaScript functionality
+## Technologies Used
 
----
-
-# Technologies Used
-
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 
----
+## How to Run the Project Locally
 
-# How to Run the Project
+1. Clone the repository
+2. Open the project folder
+3. Open `index.html` in your browser
 
-1. Clone or download the repository.
-2. Open the project folder.
-3. Open `Index.html` in any web browser.
+## Contributors
+
+- Shruti – index Page & Contact Page
+- Khubaib – About Page & README
+- Ahmed – Pricing Page & Shop Page
